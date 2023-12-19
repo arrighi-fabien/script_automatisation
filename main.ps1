@@ -4,8 +4,10 @@
 . ./create_gpo.ps1
 . ./delete_object.ps1
 
+cd C:\script_automatisation
+
 $dc_1 = "abstergo"
-$dc_2 = "local"
+$dc_2 = "net"
 $domain_name = "$dc_1.$dc_2"
 $domain_controller = "srvadds.$domain_name"
 $ou_path = "DC=$dc_1,DC=$dc_2"
